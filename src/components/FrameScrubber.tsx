@@ -53,7 +53,9 @@ export default function FrameScrubber() {
   const resizeCanvas = useCallback(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const dpr = window.devicePixelRatio || 1;
+    // Cap DPR at 2 — beyond that the extra resolution rarely improves perceived
+    // quality on small screens but doubles/triples GPU memory and draw cost.
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
     canvas.width = window.innerWidth * dpr;
     canvas.height = window.innerHeight * dpr;
     canvas.style.width = `${window.innerWidth}px`;
@@ -192,6 +194,7 @@ export default function FrameScrubber() {
           top: 0,
           left: 0,
           display: 'block',
+          willChange: 'contents',
         }}
       />
 

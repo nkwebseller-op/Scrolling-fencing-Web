@@ -25,6 +25,18 @@ const CSS = `
 @media (max-width: 860px) {
   .ef-layout { grid-template-columns: 1fr; gap: 2.5rem; }
 }
+.ef-sticky {
+  position: sticky;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+@media (max-width: 860px) {
+  .ef-sticky {
+    position: static;
+  }
+}
 .ef-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -398,15 +410,7 @@ export default function EstimateForm() {
 
       <div className="ef-layout">
         {/* ── Left: context panel ── */}
-        <div
-          style={{
-            position: 'sticky',
-            top: '2rem',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '1.75rem',
-          }}
-        >
+        <div className="ef-sticky">
           <div>
             <p
               style={{

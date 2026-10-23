@@ -450,8 +450,8 @@ export default function Testimonials() {
       `}</style>
 
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
-        {/* Dev placeholder notice */}
-        {hasPlaceholders && <DevNotice />}
+        {/* Dev placeholder notice — hidden in production */}
+        {hasPlaceholders && process.env.NODE_ENV !== 'production' && <DevNotice />}
 
         {/* ── Section header ── */}
         <div
