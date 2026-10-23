@@ -5,6 +5,7 @@ import BeforeAfterSection from "@/components/BeforeAfterSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import EstimateForm from "@/components/EstimateForm";
+import FinalCta from "@/components/FinalCta";
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
 
       {/* Inquiry form — id="estimate" anchor for all CTA links */}
       <EstimateForm />
+
+      {/* Final CTA — closing statement and navigation back to key sections */}
+      <FinalCta />
     </main>
   );
 }
