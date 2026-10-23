@@ -48,6 +48,7 @@ export default function BeforeAfterSection() {
 
   // ── Header entrance animation ────────────────────────────────────────────────
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const header = headerRef.current;
     if (!header) return;
     const obs = new IntersectionObserver(([entry]) => {
@@ -64,6 +65,10 @@ export default function BeforeAfterSection() {
 
   // ── One-time demo animation on first viewport entry ──────────────────────────
   useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      demoPlayedRef.current = true;
+      return;
+    }
     const section = sectionRef.current;
     if (!section) return;
     try {
