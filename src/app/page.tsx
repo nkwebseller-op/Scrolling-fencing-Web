@@ -1,6 +1,7 @@
 import FrameScrubber from "@/components/FrameScrubber";
 import FencingOptions from "@/components/FencingOptions";
 import ShowcaseScrubber from "@/components/ShowcaseScrubber";
+import BeforeAfterSection from "@/components/BeforeAfterSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,9 @@ export default function Home() {
 
       {/* Second cinematic scroll sequence */}
       <ShowcaseScrubber />
+
+      {/* Before & after drag-to-reveal */}
+      <BeforeAfterSection />
 
       {/* Content sections below */}
       <section

@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="asky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4B7FA8"/>
+      <stop offset="100%" stop-color="#96C5DC"/>
+    </linearGradient>
+    <linearGradient id="agnd" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4E8E34"/>
+      <stop offset="100%" stop-color="#386825"/>
+    </linearGradient>
+    <!-- Cedar fence picket repeating pattern -->
+    <pattern id="fpk" x="0" y="0" width="16" height="220" patternUnits="userSpaceOnUse">
+      <!-- Picket body -->
+      <rect x="0" y="20" width="12" height="196" fill="#7B4E2A"/>
+      <!-- Left-edge highlight -->
+      <rect x="0" y="20" width="2" height="196" fill="rgba(255,255,255,0.08)"/>
+      <!-- Right-edge shadow -->
+      <rect x="10" y="20" width="2" height="196" fill="rgba(0,0,0,0.28)"/>
+      <!-- Pointed top cap -->
+      <polygon points="0,20 6,4 12,20" fill="#8E5D32"/>
+      <!-- Gap between pickets (dark) -->
+      <rect x="12" y="0" width="4" height="220" fill="#130800"/>
+    </pattern>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="900" fill="url(#asky)"/>
+
+  <!-- Clouds left -->
+  <ellipse cx="270" cy="125" rx="158" ry="54" fill="rgba(255,255,255,0.72)"/>
+  <ellipse cx="375" cy="105" rx="105" ry="46" fill="rgba(255,255,255,0.78)"/>
+  <ellipse cx="168" cy="150" rx="88" ry="40" fill="rgba(255,255,255,0.65)"/>
+  <!-- Clouds right -->
+  <ellipse cx="1185" cy="162" rx="138" ry="50" fill="rgba(255,255,255,0.62)"/>
+  <ellipse cx="1080" cy="145" rx="92" ry="40" fill="rgba(255,255,255,0.68)"/>
+
+  <!-- House - main body -->
+  <rect x="905" y="285" width="625" height="215" fill="#DDD4C0"/>
+  <!-- Roof -->
+  <polygon points="880,285 1555,285 1217,168" fill="#7B5C40"/>
+  <!-- Chimney -->
+  <rect x="1362" y="188" width="38" height="78" fill="#8C7060"/>
+  <!-- Windows -->
+  <rect x="942" y="328" width="96" height="74" fill="#8ABAD0" rx="4"/>
+  <line x1="990" y1="328" x2="990" y2="402" stroke="#C8BEB0" stroke-width="2"/>
+  <line x1="942" y1="365" x2="1038" y2="365" stroke="#C8BEB0" stroke-width="2"/>
+  <rect x="1115" y="328" width="96" height="74" fill="#8ABAD0" rx="4"/>
+  <line x1="1163" y1="328" x2="1163" y2="402" stroke="#C8BEB0" stroke-width="2"/>
+  <line x1="1115" y1="365" x2="1211" y2="365" stroke="#C8BEB0" stroke-width="2"/>
+  <rect x="1305" y="328" width="96" height="74" fill="#8ABAD0" rx="4"/>
+  <line x1="1353" y1="328" x2="1353" y2="402" stroke="#C8BEB0" stroke-width="2"/>
+  <line x1="1305" y1="365" x2="1401" y2="365" stroke="#C8BEB0" stroke-width="2"/>
+  <!-- Door -->
+  <rect x="1145" y="420" width="84" height="80" fill="#6A4E38" rx="3"/>
+  <circle cx="1217" cy="461" r="5" fill="#C0A050"/>
+  <!-- Garage -->
+  <rect x="1375" y="400" width="148" height="100" fill="#C5BAA8"/>
+  <rect x="1378" y="403" width="142" height="94" fill="#B9AE9E"/>
+  <line x1="1449" y1="403" x2="1449" y2="497" stroke="#A09888" stroke-width="2"/>
+  <line x1="1378" y1="437" x2="1520" y2="437" stroke="#A09888" stroke-width="1.5"/>
+  <line x1="1378" y1="465" x2="1520" y2="465" stroke="#A09888" stroke-width="1.5"/>
+  <!-- Foundation -->
+  <rect x="905" y="497" width="625" height="8" fill="#C5B8A2"/>
+
+  <!-- Tree canopies — drawn BEFORE fence so fence appears in front -->
+  <!-- Tree 1 canopy -->
+  <ellipse cx="208" cy="330" rx="122" ry="132" fill="#1C4A06"/>
+  <ellipse cx="165" cy="362" rx="92" ry="100" fill="#1E5208"/>
+  <ellipse cx="258" cy="352" rx="86" ry="95" fill="#163E04"/>
+  <ellipse cx="208" cy="292" rx="76" ry="70" fill="#245C0A"/>
+  <!-- Tree 2 canopy -->
+  <ellipse cx="468" cy="348" rx="92" ry="102" fill="#1C4A06"/>
+  <ellipse cx="436" cy="380" rx="70" ry="80" fill="#1E5208"/>
+  <ellipse cx="508" cy="370" rx="66" ry="74" fill="#163E04"/>
+
+  <!-- Midground bushes — drawn before fence (fence covers them) -->
+  <ellipse cx="938" cy="498" rx="72" ry="46" fill="#2A6018"/>
+  <ellipse cx="1005" cy="494" rx="56" ry="42" fill="#306820"/>
+  <ellipse cx="1515" cy="496" rx="66" ry="44" fill="#2A6018"/>
+  <ellipse cx="1562" cy="495" rx="50" ry="40" fill="#306820"/>
+
+  <!-- Ground -->
+  <rect y="478" width="1600" height="422" fill="url(#agnd)"/>
+  <rect y="478" width="1600" height="18" fill="rgba(0,0,0,0.05)"/>
+
+  <!-- ═══════════════════════════════════════════════
+       CEDAR PRIVACY FENCE — the main transformation
+       ═══════════════════════════════════════════════ -->
+
+  <!-- Fence shadow on ground -->
+  <rect x="0" y="610" width="1600" height="30" fill="rgba(0,0,0,0.22)"/>
+  <rect x="0" y="640" width="1600" height="20" fill="rgba(0,0,0,0.10)"/>
+
+  <!-- Fence pickets via pattern (y=393 to y=613 = 220px) -->
+  <rect x="0" y="393" width="1600" height="220" fill="url(#fpk)"/>
+
+  <!-- Top rail -->
+  <rect x="0" y="387" width="1600" height="22" fill="#8E5D32"/>
+  <rect x="0" y="387" width="1600" height="4" fill="#A87045"/>
+  <rect x="0" y="406" width="1600" height="3" fill="rgba(0,0,0,0.22)"/>
+
+  <!-- Middle rail -->
+  <rect x="0" y="495" width="1600" height="20" fill="#8E5D32"/>
+  <rect x="0" y="495" width="1600" height="3" fill="#A87045"/>
+  <rect x="0" y="512" width="1600" height="3" fill="rgba(0,0,0,0.22)"/>
+
+  <!-- Bottom rail -->
+  <rect x="0" y="595" width="1600" height="22" fill="#8E5D32"/>
+  <rect x="0" y="595" width="1600" height="3" fill="#A87045"/>
+  <rect x="0" y="614" width="1600" height="3" fill="rgba(0,0,0,0.22)"/>
+
+  <!-- Fence posts (darker, every ~178px) -->
+  <rect x="-2" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+  <rect x="176" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+  <rect x="354" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+  <rect x="532" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+  <rect x="710" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+  <rect x="888" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+  <rect x="1066" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+  <rect x="1244" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+  <rect x="1422" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+  <rect x="1584" y="376" width="18" height="248" fill="#5C3518" rx="1"/>
+
+  <!-- Post caps (small cap on top of each post) -->
+  <rect x="-2" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+  <rect x="176" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+  <rect x="354" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+  <rect x="532" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+  <rect x="710" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+  <rect x="888" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+  <rect x="1066" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+  <rect x="1244" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+  <rect x="1422" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+  <rect x="1584" y="370" width="18" height="8" fill="#6E4020" rx="1"/>
+
+  <!-- Tree trunks — drawn AFTER fence so they appear in front -->
+  <rect x="196" y="420" width="24" height="210" fill="#6B4A2C"/>
+  <rect x="458" y="432" width="20" height="210" fill="#6B4A2C"/>
+
+  <!-- Driveway (in front of fence base) -->
+  <polygon points="1100,900 1395,900 1528,620 1205,620" fill="#BEB5A5"/>
+  <line x1="1100" y1="900" x2="1528" y2="620" stroke="#AEAA98" stroke-width="1.5"/>
+  <line x1="1395" y1="900" x2="1528" y2="620" stroke="#AEAA98" stroke-width="1.5"/>
+
+  <!-- Lawn texture hints -->
+  <ellipse cx="660" cy="750" rx="92" ry="28" fill="rgba(0,0,0,0.028)"/>
+  <ellipse cx="305" cy="800" rx="72" ry="22" fill="rgba(0,0,0,0.035)"/>
+
+  <!-- Sidewalk -->
+  <rect y="858" width="1600" height="42" fill="#BEB5A8"/>
+  <rect y="858" width="1600" height="2" fill="rgba(0,0,0,0.12)"/>
+
+  <!-- Sample label -->
+  <rect y="858" width="1600" height="42" fill="rgba(0,0,0,0.44)"/>
+  <text x="800" y="884" font-family="system-ui,-apple-system,Arial,sans-serif" font-size="15" fill="rgba(255,255,255,0.4)" text-anchor="middle" letter-spacing="1.5">SAMPLE IMAGE — Replace with actual after project photo</text>
+</svg>
