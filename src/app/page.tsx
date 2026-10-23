@@ -2,6 +2,7 @@ import FrameScrubber from "@/components/FrameScrubber";
 import FencingOptions from "@/components/FencingOptions";
 import ShowcaseScrubber from "@/components/ShowcaseScrubber";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
+import WhyChooseUs from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
 
       {/* Before & after drag-to-reveal */}
       <BeforeAfterSection />
+
+      {/* Why choose us */}
+      <WhyChooseUs />
 
       {/* Content sections below */}
       <section
@@ -52,6 +56,7 @@ export default function Home() {
       </section>
 
       <section
+        id="estimate"
         style={{
           background: "#111",
           color: "#fff",
