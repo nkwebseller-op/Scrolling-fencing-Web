@@ -1,4 +1,5 @@
 import FrameScrubber from "@/components/FrameScrubber";
+import FencingOptions from "@/components/FencingOptions";
 
 export default function Home() {
   return (
@@ -6,7 +7,10 @@ export default function Home() {
       {/* Scroll-driven hero animation */}
       <FrameScrubber />
 
-      {/* Content sections below the hero */}
+      {/* Fencing options explorer */}
+      <FencingOptions />
+
+      {/* Content sections below */}
       <section
         style={{
           background: "#0a0a0a",
