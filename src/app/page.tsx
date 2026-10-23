@@ -1,5 +1,6 @@
 import FrameScrubber from "@/components/FrameScrubber";
 import FencingOptions from "@/components/FencingOptions";
+import ShowcaseScrubber from "@/components/ShowcaseScrubber";
 
 export default function Home() {
   return (
@@ -9,6 +10,9 @@ export default function Home() {
 
       {/* Fencing options explorer */}
       <FencingOptions />
+
+      {/* Second cinematic scroll sequence */}
+      <ShowcaseScrubber />
 
       {/* Content sections below */}
       <section
