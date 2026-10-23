@@ -3,6 +3,7 @@ import FencingOptions from "@/components/FencingOptions";
 import ShowcaseScrubber from "@/components/ShowcaseScrubber";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
 import WhyChooseUs from "@/components/WhyChooseUs";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
 
       {/* Why choose us */}
       <WhyChooseUs />
+
+      {/* Customer testimonials */}
+      <Testimonials />
 
       {/* Content sections below */}
       <section
